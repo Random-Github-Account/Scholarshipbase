@@ -1,0 +1,21 @@
+.flexbox {
+  display: flex;
+  width: 100%;
+}
+
+.app-sidenav {
+  flex: 0 0 250px; /* Set a fixed width for the sidebar */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  background-color: #00575e;
+  position: fixed; /* Set the position to fixed */
+  left: 0; /* Stick to the left side */
+  top: 0; /* Stick to the top */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+.app-screen {
+  flex: 1;
+  margin-left: 300px; /* Adjust the margin to match the sidebar width */
+  padding: 20px; /* Add padding to the main content area */
+  height: 100%;
+}

@@ -1,0 +1,59 @@
+.container div {
+    color: white;
+}
+
+h1 {
+    color: #e3486c;
+}
+
+.container {
+    display: block;
+    float: right;
+}
+
+.address , .email, .phone {
+    width: 300px;
+    background-color: #e3486c;
+    height: 250px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    transition: transform 0.5s ease;
+    animation: slidedown 0.5s ease;
+}
+@keyframes slidedown {
+    from {
+        transform: translateY(-500%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.address-details, .phone-details, .fax-details, .email-details {
+    text-align: center;
+}
+
+.img {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img img {
+    width: 80px;
+    object-fit: contain;
+}
+
+.contact {
+    width: 600px;
+    font-size: 17px;
+    color: #e3486c;
+    text-align: justify;
+    line-height: 30px;
+}
+.container2{
+    width: 100%;
+}
+.team-member h3{
+    text-decoration: 2.5px underline #604c95;
+}

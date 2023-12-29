@@ -1,0 +1,156 @@
+h1 {
+    color: #e3486c;
+}
+
+.scholarships {
+    height: 350px;
+    width: 800px;
+    background-color: #e3486c;
+    display: inline-block;
+    color: white;
+    padding-left: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-right: 50px;
+    transition: transform 0.5s ease;
+    animation: slideright 0.5s ease;
+    z-index: 1;
+}
+.applic {
+    height: 350px;
+    width: 800px;
+    background-color: #e3486c;
+    display: inline-block;
+    color: white;
+    padding-left: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-right: 50px;
+    transition: transform 0.5s ease;
+    animation: slideup 0.5s ease;
+}
+.scholarship-items {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.items {
+    display: flex;
+}
+
+.items-message {
+    display: flex;
+    
+}
+
+.messages-items {
+    display: flex;
+}
+.messages {
+    height: 350px   ;
+    width: 380px;
+    background-color: #e3486c;
+    color: white;
+    padding-left: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    animation: slidedown 0.5s ease;
+}
+.notif {
+    height: 350px   ;
+    width: 380px;
+    background-color: #e3486c;
+    color: white;
+    padding-left: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+    animation: slideleft 0.5s ease;
+}
+
+.profile-messages{
+    display: flex;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.profile-messages:hover {
+    background-color: #604c95;
+}
+
+.profile-notif{
+    display: flex;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.profile-notif:hover {
+    background-color: #604c95;
+}
+.name{
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.messages h1 {
+    color: white;
+}
+
+.people {
+    display: flex;
+}
+.applications-items {
+    background-color: white;
+    width: 785px;
+    height: 55px;
+    margin-bottom: 10px;
+}
+.applications-items:hover {
+    background-color: #604c95;
+}
+@keyframes slidedown {
+    from {
+        transform: translateY(-500%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes slideleft {
+    from {
+        transform: translateX(500%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideright {
+    from {
+        transform: translateX(-500%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideup {
+    from {
+        transform: translateY(500%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

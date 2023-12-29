@@ -1,0 +1,63 @@
+header {
+    background-color: #e3486c;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.inbox-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e3486c;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+    animation: slideup 0.5s ease;
+}
+
+.message {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    position: relative;
+}
+@keyframes slideup {
+    from {
+        transform: translateY(500%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.message-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.message-content {
+    color: #666;
+}
+
+.respond-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.respond-button:hover {
+    position: absolute;
+    background-color: #fff;
+    color: #4caf50;
+    border: 1px solid #4caf50;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}

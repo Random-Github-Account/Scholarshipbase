@@ -1,0 +1,31 @@
+#notification-toggle {
+    display: none;
+  }
+
+  #notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+  }
+  
+
+  #notification-toggle:checked + #notification-container {
+    display: block;
+  }
+
+  #show-notification-btn {
+    margin-left: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #e3486c;
+  }
+
