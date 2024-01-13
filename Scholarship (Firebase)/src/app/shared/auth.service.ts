@@ -42,7 +42,21 @@ export class AuthService {
 
   // Get user email
   async getUserEmail(): Promise<string | null> {
+    let userEmail = localStorage.getItem('userEmail');
+  
+    if (userEmail) {
+      // If the email is already in local storage, return it immediately
+      return userEmail;
+    }
+  
     const user = await this.fireauth.currentUser;
-    return user ? user.email : null;
+  
+    if (user) {
+      // If the user is logged in, store the email in local storage for future use
+      userEmail = user.email || null;
+      localStorage.setItem('userEmail', userEmail || '');
+    }
+  
+    return userEmail;
   }
 }

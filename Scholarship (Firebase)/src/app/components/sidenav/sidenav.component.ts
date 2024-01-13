@@ -1,3 +1,4 @@
+// sidenav.component.ts
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/shared/auth.service';
 
