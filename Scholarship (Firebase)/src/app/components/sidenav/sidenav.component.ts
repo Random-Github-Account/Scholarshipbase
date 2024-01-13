@@ -1,12 +1,22 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/shared/auth.service';
 
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss']
 })
-export class SidenavComponent implements AfterViewInit {
+export class SidenavComponent implements AfterViewInit, OnInit {
   private clickedElement: HTMLElement | null = null;
+  userEmail: string | null = null;
+
+  constructor(private authService: AuthService) {}
+
+  ngOnInit(): void {
+    this.authService.getUserEmail().then(userEmail => {
+      this.userEmail = userEmail;
+    });
+  }
 
   ngAfterViewInit(): void {
     const btnElList = document.querySelectorAll<HTMLElement>('.dashboard');
