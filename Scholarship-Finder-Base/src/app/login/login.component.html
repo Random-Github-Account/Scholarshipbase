@@ -1,0 +1,36 @@
+<div class="topnav">
+  <div class="topnav-first">
+      <a href="/"><img src="/assets/logo.png" alt=""></a>
+  </div>
+</div>
+
+<div class="screen">
+  <div class="details-container">
+    <p class="create">LOGIN</p>
+    <br><br>
+    <p class="email">Username</p>
+    <div class="input">
+      <input type="email" placeholder="email@yahoo.com" name="email" [(ngModel)]="email">
+      <p>Password</p>
+      <input type="password" placeholder="password" name="password" [(ngModel)]="password">
+    
+      <button class="btn-email" type="button" (click)="login()">Login</button>
+      <br>
+      <br>
+      <br>
+      <p class="title"> Or</p>
+    </div>
+    <br>
+      <div class="social-buttons">
+          <button class="facebook" onclick="loginWithFacebook()">
+            Facebook
+          </button>
+          <button class="google" onclick="loginWithGoogle()">
+            Google
+          </button>
+          <button class="linkedin" onclick="loginWithLinkedIn()">
+           LinkedIn
+          </button>
+      </div>
+  </div>
+  </div>

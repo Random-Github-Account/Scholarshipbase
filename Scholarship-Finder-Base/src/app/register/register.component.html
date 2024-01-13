@@ -1,0 +1,22 @@
+<div class="topnav">
+  <div class="topnav-first">
+      <a href="/"><img src="/assets/logo.png" alt=""></a>
+  </div>
+</div>
+
+<div class="screen">
+  <div class="details-container">
+    <p class="create">Create an Account</p>
+    <br>
+    <p class="email">Email</p>
+    <div class="input">
+      <input type="email" placeholder="email@yahoo.com" name="email" [(ngModel)]="email">
+      <br><br>
+      <p class="password">Password</p>
+      <input type="password" placeholder="password" name="password" [(ngModel)]="password">
+
+      <button class="btn-email" type="button" (click)="register()">Register</button>
+
+    
+  </div>
+</div>

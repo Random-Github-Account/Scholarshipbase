@@ -1,0 +1,38 @@
+.topnav {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.topnav-first {
+    flex: 1;
+}
+.topnav-first img {
+    height: 100%;
+}
+
+.topnav-mid {
+    display: flex;
+    flex: 3;
+    align-items: center;
+    justify-content: center;
+}
+
+.topnav-mid div {
+    margin-right: 70px;
+    color: #00575e;
+}
+.topnav-end {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.topnav-end input{
+    padding: 10px 20px;
+    border-color: #ffb74b;
+    border-radius: 20px;
+    border-style: none;
+    color: #ffb74b;
+}

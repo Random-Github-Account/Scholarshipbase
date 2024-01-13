@@ -1,0 +1,119 @@
+h1 {
+    color: #e3486c;
+}
+
+.navbar {
+    color: #e3486c;
+    margin-top: 30px;
+}
+
+.navbar p {
+    display: inline-block;
+}
+
+.searchbar {
+    padding-right: 70px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    margin-left: 15px;
+    border-radius: 20px;
+    border-style:solid;
+    border-color: #e3486c;
+    border-width: 2px;
+}
+
+.container {
+    width: 1300px;
+    height: 50px;
+    background-color: #e3486c;
+    color: white;
+}
+
+.titles {
+    display: flex;
+    margin-left:30px;
+}
+
+.datas {
+    display: flex;
+    width: 85%;
+    background-color: white;
+    color: #e3486c;
+    border-radius: 30px;
+    padding-top: 4px;
+    margin-right: 15px;
+      transition: transform 0.5s ease; /* Add a smooth transition effect */
+            animation: slideIn 0.5s ease; /* Use the slideIn animation */
+}
+
+.datas p {
+    margin: auto;
+}
+
+.no {
+    width: 60px;
+}
+
+.no-data {
+    width: 50px;
+    padding-left: 20px;
+}
+
+.firstname {
+    width: 140px;
+}
+
+.lastname {
+    width: 140px;
+}
+
+.email {
+    width: 200px;
+}
+
+.phone {
+    width: 170px;
+}
+
+.address {
+    width: 170px;
+}
+
+.scholarship {
+    width: 200px;
+}
+
+.email-person {
+    font-size: 13px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.datas button {
+    color: white;
+    border-radius: 10px;
+    background-color: #e3486c;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    padding-right: 20px;
+    border-style: none;
+}
+
+.datas button:hover {
+    background-color: white;
+    color: #e3486c;
+    border-style: solid;
+    border-color: #e3486c;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
