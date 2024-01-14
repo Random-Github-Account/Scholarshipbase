@@ -1,64 +1,32 @@
 <h1>Applications</h1>
 
 <div class="navbar">
-    <p>Sort by :</p>
-    <input class="searchbar" type="text" placeholder="Search..">
+  <p>Sort by :</p>
+  <input class="searchbar" type="text" placeholder="Search..">
 </div>
 
 <div class="container">
-    
-    <div class="titles">
-        <p class="no">No.</p>
-        <p class="firstname">First Name</p>
-        <p class="lastname">Last Name</p>
-        <p class="email">Email</p>
-        <p class="phone">Phone Number</p>
-        <p class="address">Address</p>
-        <p class="scholarship">Scholarship</p>
-    </div>
+  <div class="titles">
+    <p class="no">No.</p>
+    <p class="firstname">First Name</p>
+    <p class="lastname">Last Name</p>
+    <p class="email">Email</p>
+    <p class="phone">Phone Number</p>
+    <p class="address">Address</p>
+    <p class="scholarship">Scholarship</p>
+  </div>
 </div>
-<br>
-    <div class="datas">
-        <p class="no-data">1</p>
-        <p class="firstname">Nello</p>
-        <p class="lastname">De Guzman</p>
-        <p class="email-person">nellorethDG&#64;gmail.com</p>
-        <p class="phone">xxxxxxxxxxx</p>
-        <p class="address">Makati, Manila</p>
-        <p class="scholarship">Athletic Scholarship</p>
 
-        <button>Check</button>
-        <button>Edit</button>
-        <button>Delete</button>
-    </div>
-    <br>
-    <div class="datas">
-        <p class="no-data">2</p>
-        <p class="firstname">Carlo</p>
-        <p class="lastname">De Guzman</p>
-        <p class="email-person">carlodeguzman&#64;gmail.com</p>
-        <p class="phone">xxxxxxxxxxx</p>
-        <p class="address">Cabanatuan, Nueva Ecija</p>
-        <p class="scholarship">Academic Scholarship</p>
+<div class="datas" *ngFor="let application of applications; let i = index">
+  <p class="no-data">{{ application.no }}</p>
+  <p class="firstname">{{ application.firstName }}</p>
+  <p class="lastname">{{ application.lastName }}</p>
+  <p class="email-person">{{ application.email }}</p>
+  <p class="phone">{{ application.phone }}</p>
+  <p class="address">{{ application.address }}</p>
+  <p class="scholarship">{{ application.scholarship }}</p>
 
-        <button>Check</button>
-        <button>Edit</button>
-        <button>Delete</button>
-    </div>
-    <br>
-    <div class="datas">
-        <p class="no-data">3</p>
-        <p class="firstname">Daynielle</p>
-        <p class="lastname">Dizon</p>
-        <p class="email-person">DaynDJdizon&#64;gmail.com</p>
-        <p class="phone">xxxxxxxxxxx</p>
-        <p class="address">Cabanatuan, Nueva Ecija</p>
-        <p class="scholarship">Artistic SCholarship</p>
-
-        <button>Check</button>
-        <button>Edit</button>
-        <button>Delete</button>
-    </div>
-    
-
-
+  <button>Check</button>
+  <button>Edit</button>
+  <button (click)="deleteApplication(i)">Delete</button>
+</div>
