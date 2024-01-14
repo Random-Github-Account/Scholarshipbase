@@ -48,21 +48,19 @@
 
 
 <div style="display: flex;">
+
     <div class="applic">
         <div>
-            <p>Applications</p>
+          <p>Applications</p>
         </div>
-    
+      
         <div class="a-items">
-            <div class="applications-items">
-            </div>
-            <div class="applications-items">
-        
-            </div>
-
-    
+          <div class="applications-items" *ngFor="let application of applications">
+            {{ application.firstName }} {{ application.lastName }} - {{ application.scholarship }}
+          </div>
         </div>
-    </div>
+      </div>
+
 
     <div class="notif">
         <p>Notifications</p>
@@ -74,7 +72,4 @@
                 Carlo De Guzman : Comment
             </div>
         </div>
-
     </div>
-
-</div>

@@ -29,6 +29,10 @@ h1 {
     transition: transform 0.5s ease;
     animation: slideup 0.5s ease;
 }
+.a-items {
+    width: 0;
+  }
+  
 .scholarship-items {
     width: 250px;
     height: 250px;
@@ -115,9 +119,15 @@ h1 {
 }
 .applications-items {
     background-color: white;
+    color: #1b1b1b;
     width: 785px;
     height: 55px;
     margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .applications-items:hover {
     background-color: #604c95;
