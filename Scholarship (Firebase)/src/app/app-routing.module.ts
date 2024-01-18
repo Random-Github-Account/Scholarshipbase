@@ -23,6 +23,10 @@ const routes: Routes = [
     path: "scholarships",
     loadChildren: () => import('./scholarships/scholarships.module').then(mod => mod.ScholarshipsModule),
   },
+  {
+    path: "apply",
+    loadChildren: () => import('./apply/apply.module').then(mod => mod.ApplyModule),
+  },
 ];
 
 @NgModule({

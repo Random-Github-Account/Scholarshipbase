@@ -10,6 +10,9 @@ h1 {
 .navbar p {
     display: inline-block;
 }
+.delete {
+    text-align: right;
+}
 
 .searchbar {
     padding-right: 70px;
@@ -47,7 +50,9 @@ h1 {
       transition: transform 0.5s ease; /* Add a smooth transition effect */
             animation: slideIn 0.5s ease; /* Use the slideIn animation */
 }
-
+.info{
+    color: #e3486c;
+}
 .datas p {
     margin: auto;
 }
@@ -91,7 +96,7 @@ h1 {
     margin-top: 20px;
 }
 
-.datas button {
+.info button {
     color: white;
     border-radius: 10px;
     background-color: #e3486c;
@@ -99,9 +104,9 @@ h1 {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-right: 10px;
-    margin-bottom: 2px;
     padding-right: 20px;
     border-style: none;
+    margin-left: auto;
 }
 
 .datas button:hover {

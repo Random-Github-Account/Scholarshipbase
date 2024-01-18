@@ -7,26 +7,29 @@
 
 <div class="container">
   <div class="titles">
-    <p class="no">No.</p>
     <p class="firstname">First Name</p>
     <p class="lastname">Last Name</p>
     <p class="email">Email</p>
     <p class="phone">Phone Number</p>
-    <p class="address">Address</p>
-    <p class="scholarship">Scholarship</p>
   </div>
 </div>
 
-<div class="datas" *ngFor="let application of applications; let i = index">
-  <p class="no-data">{{ application.no }}</p>
-  <p class="firstname">{{ application.firstName }}</p>
-  <p class="lastname">{{ application.lastName }}</p>
-  <p class="email-person">{{ application.email }}</p>
-  <p class="phone">{{ application.phone }}</p>
-  <p class="address">{{ application.address }}</p>
-  <p class="scholarship">{{ application.scholarship }}</p>
+<br>
+  <div class="info">
+      <div class="card-body">
+          <table class="table table-hover">
+              <tbody>
+                <tr *ngFor="let studnet of studentsList">
+                  <td class="firstname">{{studnet.first_name}}</td>
+                  <td class="lastname">{{studnet.last_name}}</td>
+                  <td class="email-person">{{studnet.email}}</td>
+                  <td class="phone">{{studnet.mobile}}</td>
+                  <td>
+                    <button class="btn btn-outline-danger" (click)="deleteStudent(studnet)">Delete</button>
+                </td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+  </div>
 
-  <button>Check</button>
-  <button>Edit</button>
-  <button (click)="deleteApplication(i)">Delete</button>
-</div>

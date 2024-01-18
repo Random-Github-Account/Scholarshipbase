@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { AuthService } from 'src/app/shared/auth.service';
-import { DataService } from 'src/app/shared/data.service';
-import { Student } from 'src/app/model/student';
+import { AuthService } from '../shared/auth.service';
+import { DataService } from '../shared/data.service';
+import { Student } from './../model/student';
 
 @Component({
-  selector: 'app-applications',
-  templateUrl: './applications.component.html',
-  styleUrls: ['./applications.component.scss']
+  selector: 'app-apply',
+  templateUrl: './apply.component.html',
+  styleUrls: ['./apply.component.scss']  
 })
-export class ApplicationsComponent {
+export class ApplyComponent {
   studentsList: Student[] = [];
   studentObj: Student = {
     id: '',
